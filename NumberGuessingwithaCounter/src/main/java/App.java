@@ -11,7 +11,7 @@ public class App {
 
     static void logic(){
 
-        System.out.println("I have chosen a number between 1 and 10.  Try to guess it.\n");
+        System.out.println("I have chosen a number between 1 and 10.  Try to guess it.");
         System.out.print("Your guess: ");
 
         Scanner scan = new Scanner(System.in);
@@ -31,6 +31,7 @@ public class App {
             numberOfTries++;
         }
 
+        System.out.println("That's right!  You're a good guesser.");
         System.out.println("It only took you "+numberOfTries+ " tries");
 
 
