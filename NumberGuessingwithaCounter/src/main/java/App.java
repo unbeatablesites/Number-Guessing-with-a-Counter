@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class App {
@@ -14,7 +15,22 @@ public class App {
         System.out.print("Your guess: ");
 
         Scanner scan = new Scanner(System.in);
+        Random rand = new Random();
 
+        int userInput = scan.nextInt();
+
+        int randomNumber = 1 + rand.nextInt(10);
+
+        int tries = 0;
+
+        while (userInput != randomNumber){
+
+            System.out.println("That is incorrect.  Guess again.");
+            userInput = scan.nextInt();
+            tries++;
+        }
+
+        System.out.println(tries);
 
 
     }
