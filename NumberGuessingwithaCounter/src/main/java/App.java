@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class App {
         System.out.println("I have chosen a number between 1 and 10.  Try to guess it.\n");
         System.out.print("Your guess: ");
 
-
+        Scanner scan = new Scanner(System.in);
 
 
 
