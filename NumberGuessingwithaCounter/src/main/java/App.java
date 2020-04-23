@@ -26,6 +26,7 @@ public class App {
         while (userInput != randomNumber){
 
             System.out.println("That is incorrect.  Guess again.");
+            System.out.print("Your guess: ");
             userInput = scan.nextInt();
             tries++;
         }
