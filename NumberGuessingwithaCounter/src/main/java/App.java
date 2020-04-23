@@ -21,17 +21,17 @@ public class App {
 
         int randomNumber = 1 + rand.nextInt(10);
 
-        int tries = 0;
+        int numberOfTries = 0;
 
         while (userInput != randomNumber){
 
             System.out.println("That is incorrect.  Guess again.");
             System.out.print("Your guess: ");
             userInput = scan.nextInt();
-            tries++;
+            numberOfTries++;
         }
 
-        System.out.println(tries);
+        System.out.println("It only took you "+numberOfTries+ " tries");
 
 
     }
